@@ -2,7 +2,16 @@ body {
   font-family: "Roboto", sans-serif, "Noto Sans JP", sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
   padding: 24px 0;
   background: #1B1310;
   color: #fff;
@@ -31,4 +40,24 @@ body {
 .header-list li a {
   color: #fff;
   text-decoration: none;
+}
+
+.mv {
+  position: relative;
+  height: 100vh;
+  background-image: url(../img/mv-img_pc.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mv .mv-title {
+  max-width: 449px;
+  padding: 47px 42px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #fff;
+  font-size: 50px;
+  color: #fff;
+  letter-spacing: 0.05em;
 }
