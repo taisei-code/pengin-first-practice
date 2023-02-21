@@ -2,7 +2,10 @@ body {
     font-family: 'Roboto', sans-serif, 'Noto Sans JP', sans-serif;
 }
 .header {
+  padding: 24px 0;
+  background: #1B1310;
   color: #fff;
+  border-bottom: 2px solid #fff;
 }
 .header-inner {
   display: flex;
@@ -12,9 +15,20 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+
 .header-title {
   font-size: 26px;
 }
+
 .header-list {
   display: flex;
+
+  li {
+    margin-right: 55px;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
 }
